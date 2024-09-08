@@ -1,0 +1,183 @@
+/* src/App.css */
+.App {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f6f8;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #007bff;
+  padding: 32px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.save_segment {
+  display: grid;
+  place-items: center;
+  margin-top: 2em;
+}
+.save-segment-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px;
+}
+
+.save-segment-btn:hover {
+  background-color: #218838;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.4s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup.open {
+  right: 0;
+}
+
+.popup-header {
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+}
+
+.popup-title {
+  font-size: 20px;
+}
+
+.popup-content {
+  padding: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.input-label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.blue-box {
+  background-color: #e3f2fd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.schema-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.schema-dropdown {
+  width: 75%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.schema-dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-btn,
+.remove-btn,
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+}
+
+.add-btn {
+  background-color: #28a745;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+
+.add-btn:hover,
+.remove-btn:hover,
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #007bff;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.submit-btn:hover,
+.cancel-btn:hover {
+  opacity: 0.9;
+}
